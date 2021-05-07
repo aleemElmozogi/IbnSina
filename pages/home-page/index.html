@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- title font -->
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&display=swap" rel="stylesheet">
-    <!-- page font  -->
+    <!-- page font ppp -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=RocknRoll+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Document</title>   
 </head>
 
 <body>
@@ -26,12 +26,12 @@
 <div class="main">
 
 
-        <h3 id="chose-category">Chose category</h2>
+        <h3 id="chose-category">Choose a catagory</h2>
 
 
 
     <div class="category">   
-        <ul>
+        <ul class="catagories">
 
 
             <li href="#" tabindex="1">
@@ -40,19 +40,20 @@
 
 
             <li href="#" tabindex="2">
-                <div></div><h3>Ear Therapy</h3>
+                <div></div>
+                <h3>Ear Therapy</h3>
             </li>
 
 
 
             <li href="#" tabindex="3">
-                <div></div><h3>Eyesigt Therapy</h3>
+                <div></div><h3>Eyesight Therapy</h3>
             </li>
 
 
 
             <li href="#" tabindex="4">
-                <div></div><h3>Hearth Therapy</h3>
+                <div></div><h3>Heart Therapy</h3>
             </li>
 
 
@@ -65,7 +66,7 @@
         </ul>
     </div>
 
-    <h3  id="chose-doctor" >Chose the doctor</h2>
+    <h3  id="chose-doctor" >Choose a doctor</h2>
 
 <table class="doctor-details" CELLSPACING=0>
   <tr>
@@ -73,7 +74,7 @@
     <th>Doctor</th>
     <th>Degree</th>
     <th>Rate</th>
-    <th>Price</th>
+    <th>Cost</th>
     <th>Time for today</th>
   
   </tr>
@@ -143,23 +144,20 @@
   <h2>Booking</h2>
   <form id="booking-form">
     
-    <input type="text" id="name"  placeholder="Your name..">
+    <input type="text" id="pname"  placeholder="Your name..">
     <select type="text" id="gender"  placeholder="Your gender..">
       <option >Your gender..</option>
       <option >Male</option>
       <option >Female</option>
     </select>
     <input type="number" id="age" min="13" max="90" placeholder="Your age..">
-
     <label for="country">Doctor name</label>
     <div id="size-box"></div>
-    <select >
+    <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
       <option >Ibrahim elmozogi</option>
-      
-
     </select>
 
-    <input type="date" min="2021-04-02" max="2021-04-10">
+    <input type="date" min="2021-04-02" max="2021-04-10" id="appDate">
 
     <input type="text" id="your-problem" placeholder="Your problem..">
 
@@ -167,7 +165,7 @@
   </form>
 </div>
 </div>
-        
+<script src="HP_INTERRACTIVE.js"></script>      
 </body>
 
 </html>
