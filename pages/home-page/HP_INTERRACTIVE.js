@@ -1,6 +1,4 @@
-console.dir(document)
-console.log(document.domain);
-var sex = document.querySelectorAll('.catagories li h3');
+//this is the form's object
 let info = {
         pname: "lia",
         gender: "male",
@@ -18,10 +16,9 @@ let info = {
         }
     }
 
-
-let submit = document.querySelector('#submit')
-
+//this is the event that gets triggered when clicking "submit"
 runEvent = function(){
+//here we set the object's properties to the form fields     
     info.setter(
         document.querySelector('#pname').value,   
         document.querySelector('#gender').value,
@@ -29,14 +26,19 @@ runEvent = function(){
         document.querySelector('#chooseDoctor').value,
         document.querySelector('#your-problem').value,
         document.querySelectorAll('#appDate').value
-     ) 
-     sex[0].innerHTML = "pussy squirt";
-     sex[1].innerHTML = "anal prolapse sex";
-     sex[2].innerHTML = "gay sex";
-     sex[3].innerHTML = "lesbian ass eating contest";
-     sex[4].innerHTML = "loli sex";
-
+     )
+//this is a test where we change the categories labels to the appointment's information 
+     var tester = document.querySelectorAll('.catagories li h3'); 
+     tester[0].innerHTML = info.pname;
+     tester[1].innerHTML = info.gender;
+     tester[2].innerHTML = info.age;
+     tester[3].innerHTML = info.doctor;
+     tester[4].innerHTML = info.appDate;
+//function that prevents default refreshing of the page
      event.preventDefault();    
 }
+
+let submit = document.querySelector('#submit')
+
 submit.addEventListener('click', runEvent)
 
