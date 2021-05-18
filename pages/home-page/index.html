@@ -16,7 +16,7 @@
 <body>
         <nav class="app-bar"> 
             <ul>
-                <li  id="title"><a href="#"><h1>IbnSina</h1></a></li>
+                <li  id="title"><a href="index.html"><h1>IbnSina</h1></a></li>
                 <li id="search-field"><input type="Search" placeholder=" Search "></li>
                 <li id="user-info"> <a href="#"> <div></div> <p>D.Ibn Sina</p> </a> </li>
                 
@@ -68,54 +68,18 @@
 
     <h3  id="chose-doctor" >Choose a doctor</h2>
 
-      <table   class="doctor-details" CELLSPACING=0          id="data_table" >
-        <tr>
-        <th  style="text-align: center;">   doctor</th>
-        <th   style="text-align: center;"        >  specialty</th>
-        <th   style="text-align: center;"      >   cost/hour</th>
-        </tr>
-        
-        <tr id="row1">
-        <td id="name_row1">Ankit</td>
-        <td id="specialty_row1">orthopedist</td>
-        <td id="cost_row1">20</td>
-        <td    >
-        <input type="button"     id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')"  style="border-radius: 30pt;"       >
-        <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')"     style="border-radius: 30pt;"       >
-        <input type="button" value="Delete" class="delete" onclick="delete_row('1')"       style="border-radius: 30pt;"             >
-        </td>
-        </tr>
-        
-        <tr id="row2">
-        <td id="name_row2">Shawn</td>
-        <td id="specialty_row2">dentist</td>
-        <td id="cost_row2">26</td>
-        <td>
-        <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')"    style="border-radius: 30pt;" >
-        <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')"        style="border-radius: 30pt;"       >
-        <input type="button" value="Delete" class="delete" onclick="delete_row('2')"                         style="border-radius: 30pt;"           >     
-        </td>
-        </tr>
-        
-        <tr id="row3">
-        <td id="name_row3">Rahul</td>
-        <td id="specialty_row3">plastic</td>
-        <td id="cost_row3">19</td>
-        <td>
-        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')"      style="border-radius: 30pt;"       >
-        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')"   style="border-radius: 30pt;"             >
-        <input type="button" value="Delete" class="delete" onclick="delete_row('3')"             style="border-radius: 30pt;"      >
-        </td>
-        </tr>
-        
-        <tr  >
-        <td><input type="text" id="new_name"    style="border-radius: 30pt;"     ></td>
-        <td><input type="text" id="new_specialty"    style="border-radius: 30pt;"      ></td>
-        <td><input type="text" id="new_cost"   style="border-radius: 30pt;"              ></td>
-        <td><input type="button" class="add" onclick="add_row();" value="Add Row" style="border-radius: 30pt;"   ></td>
-        </tr>
-        
-        </table>
+<table id="doctor-details" CELLSPACING=0>
+  <tr>
+  
+    <th>Doctor</th>
+    <th>Degree</th>
+    <th>Rate</th>
+    <th>Cost</th>
+    <th>Time for today</th>
+  
+  </tr>
+
+</table>
 </div> <!-- end of main -->
 
 
@@ -137,7 +101,7 @@
       <option >Female</option>
     </select>
     <input type="number" id="age" min="13" max="90" placeholder="Your age..">
-    <label for="country">Doctor name</label>
+    <label >Doctor name</label>
     <div id="size-box"></div>
     <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
       <option >Ibrahim elmozogi</option>
@@ -151,6 +115,8 @@
   </form>
 </div>
 </div>
+<script type="text/javascript" src="../../js/hTableControl.js"></script>
+
 <script src="HP_INTERRACTIVE.js"></script>      
 </body>
 
