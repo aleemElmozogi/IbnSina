@@ -16,7 +16,7 @@
 <body>
         <nav class="app-bar"> 
             <ul>
-                <li  id="title"><a href="#"><h1>IbnSina</h1></a></li>
+                <li  id="title"><a href="index.html"><h1>IbnSina</h1></a></li>
                 <li id="search-field"><input type="Search" placeholder=" Search "></li>
                 <li id="user-info"> <a href="#"> <div></div> <p>D.Ibn Sina</p> </a> </li>
                 
@@ -68,7 +68,7 @@
 
     <h3  id="chose-doctor" >Choose a doctor</h2>
 
-<table class="doctor-details" CELLSPACING=0>
+<table id="doctor-details" CELLSPACING=0>
   <tr>
   
     <th>Doctor</th>
@@ -78,57 +78,7 @@
     <th>Time for today</th>
   
   </tr>
- 
-  <tr  id="table-data">
-    <td id="name" ><div></div><p>Khalid diaf</p></td>
-    <td>Specialist</td>
-    <td> 4.5 / 5</td>
-    <td>30$/session</td>
-    <td id="time-for-today"><div>7PM</div><div>1PM</div></td>
-  </tr>
-  
 
-  
-
-  <tr id="table-data">
-    <td id="name" ><div></div><p>Seraj ben sasi</p></td>
-    <td>Consultant</td>
-    <td> 5 / 5</td>
-    <td>35%/session</td>
-    <td id="time-for-today"><div>10PM</div><div>4PM</div></td>
-  </tr>
-
-  <tr id="table-data">
-    <td id="name" ><div></div><p>Hanipal ahmed</p></td>
-    <td>Professor</td>
-    <td> 4 / 5</td>
-    <td>40$/session</td>
-    <td id="time-for-today"><div>2PM</div><div>8AM</div></td>
-  </tr>
-  <tr id="table-data">
-    <td id="name" ><div></div><p>Yousef ibrahim</p></td>
-    <td>Senior specialist</td>
-    <td> 4.5 / 5</td>
-    <td>30$/session</td>
-    <td id="time-for-today"><div>3PM</div><div>9AM</div></td>
-  </tr>
-
-  <tr id="table-data">
-    <td id="name" ><div></div><p>Marwan khalid</p></td>
-    <td>Professor</td>
-    <td> 5 / 5</td>
-    <td>50$/session</td>
-    <td id="time-for-today"><div>5PM</div><div>11AM</div></td>
-  </tr>
-
-  <tr id="table-data">
-    <td id="name" ><div></div><p>Ahmed musa</p></td>
-    <td>Consultant</td>
-    <td> 4.5 / 5</td>
-    <td>30$/session</td>
-    <td id="time-for-today"><div>2PM</div><div>8AM</div></td>
-  </tr>
- 
 </table>
 </div> <!-- end of main -->
 
@@ -151,7 +101,7 @@
       <option >Female</option>
     </select>
     <input type="number" id="age" min="13" max="90" placeholder="Your age..">
-    <label for="country">Doctor name</label>
+    <label >Doctor name</label>
     <div id="size-box"></div>
     <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
       <option >Ibrahim elmozogi</option>
@@ -165,6 +115,8 @@
   </form>
 </div>
 </div>
+<script type="text/javascript" src="../../js/hTableControl.js"></script>
+
 <script src="HP_INTERRACTIVE.js"></script>      
 </body>
 
