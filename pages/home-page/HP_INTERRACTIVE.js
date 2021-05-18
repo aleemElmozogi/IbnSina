@@ -22,35 +22,40 @@ submit.addEventListener('click', function (event){
 
 
 
-info.setter(
-    document.querySelector('#pname').value,   
-    document.querySelector('#gender').value,
-    document.querySelector('#age').value,
-    document.querySelector('#chooseDoctor').value,
-    document.querySelector('#your-problem').value,
-    document.querySelectorAll('#appDate').value
- )
- 
- 
+    info.setter(
+        document.querySelector('#pname').value,   
+        document.querySelector('#gender').value,
+        document.querySelector('#age').value,
+        document.querySelector('#chooseDoctor').value,
+        document.querySelector('#your-problem').value,
+        document.getElementById("appDate").value
+     )
+     
+     
 
 //this is a test where we change the categories labels to the appointment's information 
- var tester = document.querySelectorAll('.catagories li h3'); 
- tester[0].innerHTML = info.pname;
- tester[1].innerHTML = info.gender;
- tester[2].innerHTML = info.age;
- tester[3].innerHTML = info.doctor;
- tester[4].innerHTML = info.appDate;  
-  
-
-// clear form after submit
-
-document.querySelector('#pname').value = '' 
-document.querySelector('#gender').value = ''
-document.querySelector('#age').value = ''
-document.querySelector('#chooseDoctor').value = ''
-document.querySelector('#your-problem').value = ''
-document.querySelectorAll('#appDate').value = ''
-
-event.preventDefault()
+//      var tester = document.querySelectorAll('.catagories li h3'); 
+//      tester[0].innerHTML = info.pname;
+//      tester[1].innerHTML = info.gender;
+//      tester[2].innerHTML = info.age;
+//      tester[3].innerHTML = info.doctor;
+//      tester[4].innerHTML = info.appDate;  
+      
+    
+ // clear form after submit
+   
+    document.querySelector('#pname').value = '' 
+    document.querySelector('#gender').value = ''
+    document.querySelector('#age').value = ''
+    document.querySelector('#chooseDoctor').value = ''
+    document.querySelector('#your-problem').value = ''
+    document.getElementById("appDate").value = ''
+    
+   
+    window.scrollTo(0, 0)
+   
+   
+    event.preventDefault()
+   
 
 }, false)
