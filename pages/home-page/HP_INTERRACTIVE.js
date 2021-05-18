@@ -28,7 +28,7 @@ submit.addEventListener('click', function (event){
         document.querySelector('#age').value,
         document.querySelector('#chooseDoctor').value,
         document.querySelector('#your-problem').value,
-        document.querySelectorAll('#appDate').value
+        document.getElementById("appDate").value
      )
      
      
@@ -50,8 +50,13 @@ submit.addEventListener('click', function (event){
     document.querySelector('#chooseDoctor').value = ''
     document.querySelector('#your-problem').value = ''
     document.querySelectorAll('#appDate').value = ''
-
+    
+   
+    window.scrollTo(0, 0)
+   
+   
     event.preventDefault()
+   
 
 }, false)
 
