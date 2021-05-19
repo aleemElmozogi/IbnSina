@@ -18,7 +18,7 @@
 <body>
         <nav class="app-bar"> 
             <ul>
-                <li  id="title"><a href="#"><h1>IbnSina</h1></a></li>
+                <li  id="title"><a href="../home-page/index.html"  ><h1>IbnSina</h1></a></li>
                 <li id="search-field"><input type="Search" placeholder=" Search "></li>
                 <li id="user-info"> <a href="#"> <div></div> <p>D.Ibn Sina</p> </a> </li>
                 
@@ -39,29 +39,29 @@
 
 
 
-    <div class="reports" >   
+    <div id="reports" >   
         <ul>
 
 
-            <li href="#" >
-                <h1>65</h1><h3>Total appointments</h3>
+            <li href="#"  >
+                <h1 id="totalAppointments" ></h1><h3>Total appointments</h3>
             </li>
 
 
             <li href="#" >
-                <h1>25</h1><h3>Upcoming appointments</h3>
+                <h1 id="myAppointments"></h1><h3>My appointments</h3>
             </li>
 
 
 
             <li href="#" >
-              <h1>41</h1><h3>Female
+              <h1 id="femalePations"></h1><h3>Female
                 pations
               </h3>
           </li>
 
           <li href="#" >
-            <h1>24</h1><h3>Male
+            <h1 id="malePations"></h1><h3>Male
                 pations</h3>
         </li>
 
@@ -113,7 +113,7 @@
   <h2>Booking</h2>
   <form id="booking-form">
     
-    <input type="text" id="name"  placeholder="Your name..">
+    <input type="text" id="pname"  placeholder="Your name..">
     <select type="text" id="gender"  placeholder="Your gender..">
       <option >Your gender..</option>
       <option >Male</option>
@@ -123,23 +123,29 @@
 
     <label for="country">Doctor name</label>
     <div id="size-box"></div>
-    <select >
-      <option >Ibrahim elmozogi</option>
+    <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
       
-
     </select>
 
-    <input type="date" min="2021-04-02" max="2021-04-10">
+    <input id="appDate" type="date" min="">
 
     <input type="text" id="your-problem" placeholder="Your problem..">
 
-    <input type="submit" id="submit" value="Submit">
+    <input type="submit"  id="submit" value="Submit">
   </form>
 </div>
 </div>
         
+<<<<<<< HEAD
+<script type="text/javascript"  src="../../js/doctorObject.js"></script>
+<script type="text/javascript" src="../../js/controlDoctorObject.js"></script>
+<script type="text/javascript"  src="../../js/montlyReports.js"></script>
+<script type="text/javascript" src="../../js/pTableControl.js"></script>
+<script type="text/javascript" src="../../js/bookingFormControl.js"></script>      
+=======
 
 <script type="text/javascript" src="../../js/pTableControl.js"></script>
+>>>>>>> 5703bcd01dd99cf4133a73a6a74b1a705f9770ab
 
 </body>
 

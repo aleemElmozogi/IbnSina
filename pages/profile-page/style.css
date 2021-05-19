@@ -161,14 +161,14 @@ body{
   ::-webkit-scrollbar{
       display: none;
   }
-  .reports{
+  #reports{
       width: 100%;
       margin-right: 20px;
       margin-left: 10px;
       margin-bottom: 20px;
       
   }
-.reports ul{
+  #reports ul{
     display: flex;
     overflow-x: scroll;
     
@@ -176,7 +176,7 @@ body{
 }
 
 
-.reports ul li{
+#reports ul li{
     background-color: #ffffff;
     color: #4285f4;
     margin-left: 35px;
@@ -192,7 +192,7 @@ body{
     box-shadow: 1px 1px 12px 1px #444242;
 }
 
-.reports ul li  h1{
+#reports ul li  h1{
     margin-left: 10px;
     margin-bottom: 20px;
     font-size: 40px;
@@ -200,7 +200,7 @@ body{
 
 }
 
-.reports ul  li  h3{
+#reports ul  li  h3{
     font-size: 20px;
     max-width: 150px;
     margin-top: 10px;
@@ -227,6 +227,8 @@ body{
     text-align:center;
     border-collapse: collapse;
     box-shadow: 1px 1px 12px 1px #444242;
+    overflow-y:scroll;
+    height:450px;
     
     
 }
