@@ -161,14 +161,14 @@ body{
   ::-webkit-scrollbar{
       display: none;
   }
-  .reports{
+  #reports{
       width: 100%;
       margin-right: 20px;
       margin-left: 10px;
       margin-bottom: 20px;
       
   }
-.reports ul{
+  #reports ul{
     display: flex;
     overflow-x: scroll;
     
@@ -176,7 +176,7 @@ body{
 }
 
 
-.reports ul li{
+#reports ul li{
     background-color: #ffffff;
     color: #4285f4;
     margin-left: 35px;
@@ -192,7 +192,7 @@ body{
     box-shadow: 1px 1px 12px 1px #444242;
 }
 
-.reports ul li  h1{
+#reports ul li  h1{
     margin-left: 10px;
     margin-bottom: 20px;
     font-size: 40px;
@@ -200,7 +200,7 @@ body{
 
 }
 
-.reports ul  li  h3{
+#reports ul  li  h3{
     font-size: 20px;
     max-width: 150px;
     margin-top: 10px;
@@ -216,7 +216,7 @@ body{
 
 
 
-.Upcoming-appointments  {
+#Upcoming-appointments  {
     width: 93%;
     margin-left: 35px;
     margin-top: 50px;
@@ -227,10 +227,12 @@ body{
     text-align:center;
     border-collapse: collapse;
     box-shadow: 1px 1px 12px 1px #444242;
+    overflow-y:scroll;
+    height:450px;
     
     
 }
-.Upcoming-appointments  tr th{
+#Upcoming-appointments  tr th{
     padding-top: 30px;
     padding-bottom: 50px;
     font-family: 'Bitter', serif;
@@ -246,7 +248,7 @@ body{
     
 }
 
-.Upcoming-appointments tr td{
+#Upcoming-appointments tr td{
     padding-bottom: 30px;
     font-family: 'Bitter', serif;
     font-size: 18px;
@@ -258,12 +260,26 @@ body{
     height: 30px;
  
 }
-.Upcoming-appointments tr #time-for-today div{
+#Upcoming-appointments tr .pAge{
+    
+    width: 20px;
+    
+    
+ 
+}
+#Upcoming-appointments tr .pGender{
+    
+    width: 20px;
+    
+    
+ 
+}
+#Upcoming-appointments tr .file div{
     display: flex;
     justify-content: center;
 
 }
-.Upcoming-appointments tr #time-for-today #pation-file, #add-file{
+#Upcoming-appointments tr .file .pation-file, .add-file{
    width: 60px;
    height: 40px;
    line-height: 30px; 
@@ -272,13 +288,13 @@ body{
     background-size: 30px;
     
 }
-.Upcoming-appointments tr #time-for-today #pation-file{
+#Upcoming-appointments tr .file .pation-file{
     background-image: url("icons/file.png");
 }
-.Upcoming-appointments tr #time-for-today #add-file{
+#Upcoming-appointments tr .file .add-file{
     background-image: url("icons/add-file.png");
 }
-.Upcoming-appointments tr #time-for-today #add-file input{
+#Upcoming-appointments tr .file .add-file input{
     width: 40px;
    height: 40px;
    outline: none;
@@ -287,12 +303,12 @@ body{
 }
 
 
-.Upcoming-appointments tr #time-for-today div #add-file:hover{
+#Upcoming-appointments tr .file div .add-file:hover{
     
     background-size: 40px;
 
  }
- .Upcoming-appointments tr #time-for-today div #pation-file:hover{
+ #Upcoming-appointments tr .file div .pation-file:hover{
     
     background-size: 40px;
 
