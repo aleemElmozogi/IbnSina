@@ -1,16 +1,22 @@
+
+
 function hTable(category) {
-
-  let table = document.getElementById("doctor-details")
-
   
+  
+  let table = document.getElementById("doctor-details")
+var paras=document.getElementsByClassName('table-data');
+while(paras[0]) {
+  paras[0].parentNode.removeChild(paras[0]);
+}
+
 
 
       for(let index in catagoryDoctors(category)){
-
+        
         let tableRow = document.createElement("tr") 
         tableRow.setAttribute("class", "table-data")
 
-        tableRow.onclick = function() {
+        tableRow.addEventListener('click',f=>{
           window.location.href="../profile-page/index.html";
           
           let doctorName = catagoryDoctors(category)[index].dName;
@@ -18,11 +24,22 @@ function hTable(category) {
 
           let dCategory = catagoryDoctors(category)[index].dCatagory;
           sessionStorage.setItem("dCategory", dCategory);
-          
-
-          
-
         }
+        )
+
+        // tableRow.onclick = function() {
+        //   window.location.href="../profile-page/index.html";
+          
+        //   let doctorName = catagoryDoctors(category)[index].dName;
+        //   sessionStorage.setItem("doctorName", doctorName);
+
+        //   let dCategory = catagoryDoctors(category)[index].dCatagory;
+        //   sessionStorage.setItem("dCategory", dCategory);
+          
+
+          
+
+        // }
 
         
 
@@ -46,8 +63,9 @@ function hTable(category) {
         tdCost.innerHTML = catagoryDoctors(category)[index].sCost
         sWorkTime.innerHTML = catagoryDoctors(category)[index].workTime[0]
         eWorkTime.innerHTML = catagoryDoctors(category)[index].workTime[1]
-      
+       
       }
+     
  }
 
 

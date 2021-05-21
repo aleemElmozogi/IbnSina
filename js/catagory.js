@@ -5,10 +5,13 @@ let HeartTherapy = document.querySelector('#HeartTherapy')
 let GastroEnterology = document.querySelector('#GastroEnterology')
 
 Neuropathology.addEventListener('click', e=>{
+   
     hTable("Neuropathology") 
     hChoseDoctor ("Neuropathology")
+   
 })
 EarTherapy.addEventListener('click', e=>{
+
     hTable("Ear Therapy") 
     hChoseDoctor ("Ear Therapy")
 })
