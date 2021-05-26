@@ -1,16 +1,23 @@
 function hTable(category) {
 
+  
   let table = document.getElementById("doctor-details")
+  
+
+  
 
   
 
 
       for(let index in catagoryDoctors(category)){
 
+        
+
+
         let tableRow = document.createElement("tr") 
         tableRow.setAttribute("class", "table-data")
 
-        tableRow.onclick = function() {
+        tableRow.addEventListener('click',f=>{
           window.location.href="../profile-page/index.html";
           
           let doctorName = catagoryDoctors(category)[index].dName;
@@ -18,11 +25,10 @@ function hTable(category) {
 
           let dCategory = catagoryDoctors(category)[index].dCatagory;
           sessionStorage.setItem("dCategory", dCategory);
-          
-
-          
-
         }
+        )
+
+     
 
         
 
@@ -48,6 +54,8 @@ function hTable(category) {
         eWorkTime.innerHTML = catagoryDoctors(category)[index].workTime[1]
       
       }
+
+      
  }
 
 
