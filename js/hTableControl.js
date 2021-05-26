@@ -1,4 +1,3 @@
-function hTable(category) {
 
   
   let table = document.getElementById("doctor-details")
@@ -6,14 +5,19 @@ function hTable(category) {
 
   
 
+function hTable(category) {
   
+  
+  let table = document.getElementById("doctor-details")
+var paras=document.getElementsByClassName('table-data');
+while(paras[0]) {
+  paras[0].parentNode.removeChild(paras[0]);
+}
+
 
 
       for(let index in catagoryDoctors(category)){
-
         
-
-
         let tableRow = document.createElement("tr") 
         tableRow.setAttribute("class", "table-data")
 
@@ -52,7 +56,7 @@ function hTable(category) {
         tdCost.innerHTML = catagoryDoctors(category)[index].sCost
         sWorkTime.innerHTML = catagoryDoctors(category)[index].workTime[0]
         eWorkTime.innerHTML = catagoryDoctors(category)[index].workTime[1]
-      
+       
       }
 
       
