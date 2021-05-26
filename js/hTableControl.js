@@ -1,20 +1,22 @@
 
   
-  let table = document.getElementById("doctor-details")
   
 
-  
+  // window.localStorage.removeItem("newAppointments");
+  sessionStorage.removeItem("doctorName");
 
   function hTable(category) {
     
-    
+
+
     let table = document.getElementById("doctor-details")
   var paras=document.getElementsByClassName('table-data');
   while(paras[0]) {
     paras[0].parentNode.removeChild(paras[0]);
   }
   
-  
+ 
+
   
         for(let index in catagoryDoctors(category)){
           

@@ -3,6 +3,7 @@
 let pdName = sessionStorage.getItem("doctorName");
 let pdCategory = sessionStorage.getItem("dCategory");
 
+// nt(pdName,pdCategory)
 
 // this sets the min date in the date input to today's date
 function todayDate (){
@@ -29,14 +30,24 @@ function pChoseDoctor (dName){
         select.append(option)
         option.innerHTML = dName 
 }
-pChoseDoctor (pdName)
+
+if(pdName != null)
+ pChoseDoctor (pdName) 
 
 
 // chose doctor input in the home page
 function hChoseDoctor (category){
     let select = document.getElementById("chooseDoctor")
+
+    var paras=document.getElementsByClassName("option")
+    while(paras[0]) {
+      paras[0].parentNode.removeChild(paras[0]);
+    }
+
+
     for(let index in catagoryDoctors(category)){
         let option = document.createElement("option")
+        option.setAttribute("class", "option")
         select.append(option)
         option.innerHTML = catagoryDoctors(category)[index].dName
 
@@ -51,7 +62,6 @@ function appointmentSetter(dName,pName,pAge,pGender,pBroblem,appointmentDate,dCa
                         pBroblem : pBroblem,
                         appointmentDate : appointmentDate,
                               }
-                              console.log(newAppointmentObject)
     pushObject(newAppointmentObject,dName,dCategory)
                             }
 
@@ -60,6 +70,7 @@ let submit = document.querySelector('#submit')
 submit.addEventListener('click', function (event){
 
 // this addes the new appointment object into the doctor appointment objects array
+
 appointmentSetter(
     document.querySelector("#chooseDoctor").value.trim(),
     document.querySelector("#pname").value.trim(), 
@@ -74,9 +85,10 @@ appointmentSetter(
 // clear form after submit
 
 
-
+if(pdName != null)
 pTable(pdName,pdCategory)
 
+reports(pdName,pdCategory)
 
 document.querySelector('#pname').value = '' 
 document.querySelector('#gender').value = ''
