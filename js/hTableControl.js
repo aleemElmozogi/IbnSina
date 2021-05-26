@@ -1,4 +1,9 @@
 
+  
+  let table = document.getElementById("doctor-details")
+  
+
+  
 
 function hTable(category) {
   
@@ -9,6 +14,9 @@ while(paras[0]) {
   paras[0].parentNode.removeChild(paras[0]);
 }
 
+
+
+        
 
 
       for(let index in catagoryDoctors(category)){
@@ -27,19 +35,8 @@ while(paras[0]) {
         }
         )
 
-        // tableRow.onclick = function() {
-        //   window.location.href="../profile-page/index.html";
-          
-        //   let doctorName = catagoryDoctors(category)[index].dName;
-        //   sessionStorage.setItem("doctorName", doctorName);
-
-        //   let dCategory = catagoryDoctors(category)[index].dCatagory;
-        //   sessionStorage.setItem("dCategory", dCategory);
-          
-
-          
-
-        // }
+     
+      
 
         
 
@@ -65,7 +62,7 @@ while(paras[0]) {
         eWorkTime.innerHTML = catagoryDoctors(category)[index].workTime[1]
        
       }
-     
+
  }
 
 

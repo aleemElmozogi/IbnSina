@@ -34,7 +34,7 @@ pChoseDoctor (pdName)
 
 // chose doctor input in the home page
 function hChoseDoctor (category){
-    let select = document.getElementById("hChooseDoctor")
+    let select = document.getElementById("chooseDoctor")
     for(let index in catagoryDoctors(category)){
         let option = document.createElement("option")
         select.append(option)
