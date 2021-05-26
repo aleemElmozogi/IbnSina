@@ -215,7 +215,7 @@ body{
     
 }
 #doctor-details  tr th{
-    text-align: left;
+    text-align: center;
     padding: 15px 0px 30px;
     font-family: 'Bitter', serif;
     color: #4285f4;
