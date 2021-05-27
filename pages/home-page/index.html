@@ -71,15 +71,15 @@
 <table id="doctor-details" CELLSPACING=0 style="text-align: center;">
   
   
-    <th >Doctor</th>
+    
+
+  <tr>
+
+    <th>Doctor</th>
     <th>Degree</th>
     <th>Rate</th>
     <th>Cost</th>
     <th>Time for today</th>
-
-  <tr>
-
-
 
     
   </tr>
@@ -90,38 +90,41 @@
 
 
 <div class="side-bar">
-  <div id="doctor-profile"> 
+  <div id="total-appointments"> 
     <!-- going to put here some whelcome-message or something like that? -->
-   
+    <h1 id="totalAppointments" ></h1><h3>Total appointments</h3>
   </div>
 
-<div id="booking">
-  <h2>Booking</h2>
-  <form id="booking-form">
-    
-    <input type="text" id="pname"  placeholder="Your name..">
-    <select type="text" id="gender"  placeholder="Your gender..">
-      <option >Your gender..</option>
-      <option >Male</option>
-      <option >Female</option>
-    </select>
-    <input type="number" id="age" min="13" max="90" placeholder="Your age..">
-    <label >Doctor name</label>
-    <div id="size-box"></div>
-    <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
-
-
-    <input id="appDate" type="date" min="">
-
-    <input type="text" id="your-problem" placeholder="Your problem..">
-
-    <input type="submit"  id="submit" value="Submit">
-  </form>
-</div>
+  <div id="booking">
+    <h2>Booking</h2>
+    <form id="booking-form">
+      
+      <input type="text" id="pname"  placeholder="Your name..">
+      <select type="text" id="gender"  placeholder="Your gender..">
+        <option >Your gender..</option>
+        <option >Male</option>
+        <option >Female</option>
+      </select>
+      <input type="number" id="age" min="13" max="90" placeholder="Your age..">
+  
+      <label for="country">Doctor name</label>
+      <div id="size-box"></div>
+      <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
+        
+      </select>
+  
+      <input id="appDate" type="date" min="">
+  
+      <input type="text" id="your-problem" placeholder="Your problem..">
+  
+      <input type="submit"  id="submit" value="Submit">
+    </form>
+  </div>
 </div>
 <script type="text/javascript"  src="../../js/doctorObject.js"></script>
 <script type="text/javascript" src="../../js/controlDoctorObject.js"></script>
 <script type="text/javascript" src="../../js/hTableControl.js"></script>
+<script type="text/javascript"  src="../../js/montlyReports.js"></script>
 <script type="text/javascript" src="../../js/catagory.js"></script>
 <script type="text/javascript" src="../../js/bookingFormControl.js"></script>      
 </body>

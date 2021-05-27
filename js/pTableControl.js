@@ -1,10 +1,16 @@
 let dName = sessionStorage.getItem("doctorName");
 let doctorCategory = sessionStorage.getItem("dCategory");
-
-
+  
 function pTable(dName,dCategory) {
 
   let table = document.getElementById("Upcoming-appointments")
+
+  var paras=document.getElementsByClassName("table-data");
+  while(paras[0]) {
+    paras[0].parentNode.removeChild(paras[0]);
+  }
+
+  // nt(dName , doctorCategory)
 
   for(let index in doctorAppointmentsGetter(findDoctor(dName,dCategory)) ){
 
@@ -38,6 +44,8 @@ function pTable(dName,dCategory) {
     
   
    }
+
+
 }
 
 pTable(dName,doctorCategory)

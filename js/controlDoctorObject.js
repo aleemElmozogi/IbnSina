@@ -5,7 +5,7 @@ function doctorsGetter(){
 
 }
 
-// This function returns the doctors in a specific catagory
+// This function returns the doctors from a specific catagory
 function catagoryDoctors(dCatagory){
 let doctorsList= []
 for (index in doctorsGetter())
@@ -31,6 +31,7 @@ if (doctorsGetter()[index].dName === doctorName)
 return dIndex
 }
 
+
 // this loops inside the appointment objects
 // for (let index in neuropathologyAppointmentsGetter())
 // console.log(neuropathologyAppointmentsGetter()[index].pAge)
@@ -40,7 +41,7 @@ return dIndex
 // console.log( neuropathologyDoctorsGetter()[index])
 
 
-let doctorsDeserialized
+// let doctorsDeserialized
 
 // this function added a new appointment object to the appointment objects array
 function pushObject(newAppointmentObject,dName,dCategory){
@@ -48,23 +49,23 @@ function pushObject(newAppointmentObject,dName,dCategory){
     doctorAppointmentsGetter(findDoctor(dName,dCategory)).push(newAppointmentObject)
 
     // this stores the new appointment object into the localStorage
-    localStorage.setItem("newAppointments", JSON.stringify(doctorAppointmentsGetter(findDoctor(dName,dCategory))))
-    doctorsDeserialized = JSON.parse(localStorage.getItem("newAppointments"))
+    // localStorage.setItem("newAppointments", JSON.stringify(newAppointmentObject))
+    // doctorsDeserialized = JSON.parse(localStorage.getItem("newAppointments"))
 }
 // pushObject("Seraj ben sasi","Mahmmoud khalid",12,"Male","gggggggggggg","Thursday, April 3")
 
 
 // after the page gets refreshed the new appointments gets deleted from the appointmet object
 // the function takes the appointment object from the local storage and saves it in the appointment object
-function nt(dName,dCategory){
-if (JSON.parse(localStorage.getItem("newAppointments"))!= null) {
-  for (index in JSON.parse(localStorage.getItem("newAppointments")))
-    doctorAppointmentsGetter(findDoctor(dName,dCategory)).push(JSON.parse(localStorage.getItem("newAppointments"))[index])
+// function nt(dName,dCategory){
+// if (JSON.parse(localStorage.getItem("newAppointments"))!= null) {
+//   for (index in JSON.parse(localStorage.getItem("newAppointments")))
+//     doctorAppointmentsGetter(findDoctor(dName,dCategory)).push(JSON.parse(localStorage.getItem("newAppointments"))[index])
 
-    console.log(doctorAppointmentsGetter(findDoctor(dName,dCategory)))
+//     console.log(doctorAppointmentsGetter(findDoctor(dName,dCategory)))
 
-  }
-}
+//   }
+// }
 // nt("Seraj ben sasi")
 
 
