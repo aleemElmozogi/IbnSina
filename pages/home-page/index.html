@@ -34,31 +34,31 @@
         <ul class="catagories">
 
 
-            <li href="#" tabindex="1">
+            <li id="Neuropathology" href="#" tabindex="1" >
                 <div></div><h3>Neuro pathology</h3>
             </li>
 
 
-            <li href="#" tabindex="2">
+            <li id="EarTherapy" href="#" tabindex="2"  >
                 <div></div>
                 <h3>Ear Therapy</h3>
             </li>
 
+            
 
-
-            <li href="#" tabindex="3">
+            <li id="EyesightTherapy" href="#" tabindex="3" >
                 <div></div><h3>Eyesight Therapy</h3>
             </li>
 
+            
 
-
-            <li href="#" tabindex="4">
+            <li id="HeartTherapy" href="#" tabindex="4" >
                 <div></div><h3>Heart Therapy</h3>
             </li>
 
 
 
-            <li href="#" tabindex="5">
+            <li id="GastroEnterology" href="#" tabindex="5" >
                 <div></div><h3>Gastro Enterology</h3>
             </li>
 
@@ -68,56 +68,65 @@
 
     <h3  id="chose-doctor" >Choose a doctor</h2>
 
-<table id="doctor-details" CELLSPACING=0>
-  <tr>
+<table id="doctor-details" CELLSPACING=0 style="text-align: center;">
   
+  
+    
+
+  <tr>
+
     <th>Doctor</th>
     <th>Degree</th>
     <th>Rate</th>
     <th>Cost</th>
     <th>Time for today</th>
-  
-  </tr>
 
+    
+  </tr>
+  
 </table>
 </div> <!-- end of main -->
 
 
 
 <div class="side-bar">
-  <div id="doctor-profile"> 
+  <div id="total-appointments"> 
     <!-- going to put here some whelcome-message or something like that? -->
-   
+    <h1 id="totalAppointments" ></h1><h3>Total appointments</h3>
   </div>
 
-<div id="booking">
-  <h2>Booking</h2>
-  <form id="booking-form">
-    
-    <input type="text" id="pname"  placeholder="Your name..">
-    <select type="text" id="gender"  placeholder="Your gender..">
-      <option >Your gender..</option>
-      <option >Male</option>
-      <option >Female</option>
-    </select>
-    <input type="number" id="age" min="13" max="90" placeholder="Your age..">
-    <label >Doctor name</label>
-    <div id="size-box"></div>
-    <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
-      <option >Ibrahim elmozogi</option>
-    </select>
-
-    <input type="date" min="2021-04-02" max="2021-04-10" id="appDate">
-
-    <input type="text" id="your-problem" placeholder="Your problem..">
-
-    <input type="submit" id="submit" value="Submit">
-  </form>
+  <div id="booking">
+    <h2>Booking</h2>
+    <form id="booking-form">
+      
+      <input type="text" id="pname"  placeholder="Your name..">
+      <select type="text" id="gender"  placeholder="Your gender..">
+        <option >Your gender..</option>
+        <option >Male</option>
+        <option >Female</option>
+      </select>
+      <input type="number" id="age" min="13" max="90" placeholder="Your age..">
+  
+      <label for="country">Doctor name</label>
+      <div id="size-box"></div>
+      <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
+        
+      </select>
+  
+      <input id="appDate" type="date" min="">
+  
+      <input type="text" id="your-problem" placeholder="Your problem..">
+  
+      <input type="submit"  id="submit" value="Submit">
+    </form>
+  </div>
 </div>
-</div>
+<script type="text/javascript"  src="../../js/doctorObject.js"></script>
+<script type="text/javascript" src="../../js/controlDoctorObject.js"></script>
 <script type="text/javascript" src="../../js/hTableControl.js"></script>
-
-<script src="HP_INTERRACTIVE.js"></script>      
+<script type="text/javascript"  src="../../js/montlyReports.js"></script>
+<script type="text/javascript" src="../../js/catagory.js"></script>
+<script type="text/javascript" src="../../js/bookingFormControl.js"></script>      
 </body>
 
 </html>

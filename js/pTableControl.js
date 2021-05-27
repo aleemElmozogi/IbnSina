@@ -1,8 +1,18 @@
-function pTable(doctorName) {
+let dName = sessionStorage.getItem("doctorName");
+let doctorCategory = sessionStorage.getItem("dCategory");
+  
+function pTable(dName,dCategory) {
 
   let table = document.getElementById("Upcoming-appointments")
 
-  for(let index in doctorAppointmentsGetter(findDoctor(doctorName)) ){
+  var paras=document.getElementsByClassName("table-data");
+  while(paras[0]) {
+    paras[0].parentNode.removeChild(paras[0]);
+  }
+
+  // nt(dName , doctorCategory)
+
+  for(let index in doctorAppointmentsGetter(findDoctor(dName,dCategory)) ){
 
     let tableRow = document.createElement("tr") 
     tableRow.setAttribute("class", "table-data")
@@ -27,13 +37,15 @@ function pTable(doctorName) {
     tableRow.append(tdName, tdAge, tdGender, tdappointmentDate,file)
     table.append(tableRow)
  
-    tdName.innerHTML = doctorAppointmentsGetter(findDoctor(doctorName))[index].pName
-    tdAge.innerHTML = doctorAppointmentsGetter(findDoctor(doctorName))[index].pAge
-    tdGender.innerHTML = doctorAppointmentsGetter(findDoctor(doctorName))[index].pGender
-    tdappointmentDate.innerHTML = doctorAppointmentsGetter(findDoctor(doctorName))[index].appointmentDate
+    tdName.innerHTML = doctorAppointmentsGetter(findDoctor(dName,dCategory))[index].pName
+    tdAge.innerHTML = doctorAppointmentsGetter(findDoctor(dName,dCategory))[index].pAge
+    tdGender.innerHTML = doctorAppointmentsGetter(findDoctor(dName,dCategory))[index].pGender
+    tdappointmentDate.innerHTML = doctorAppointmentsGetter(findDoctor(dName,dCategory))[index].appointmentDate
     
   
    }
+
+
 }
 
-
+pTable(dName,doctorCategory)
