@@ -5,7 +5,7 @@ function doctorsGetter(){
 
 }
 
-// This function returns the doctors in a specific catagory
+// This function returns the doctors from a specific catagory
 function catagoryDoctors(dCatagory){
 let doctorsList= []
 for (index in doctorsGetter())

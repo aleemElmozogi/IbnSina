@@ -312,12 +312,39 @@ body{
     padding: 20px;
     
 }
-.side-bar #doctor-profile{
+.side-bar #total-appointments{
     border-radius: 20px;
     height: 220px;
     box-shadow: 0px 0px 2px 0px #beb8b8;
     background-color: #4285f4;
     padding: 20px;
+    box-shadow: 1px 1px 12px 1px #444242;
+}
+
+.side-bar #total-appointments h1{
+    
+    color: #f4f9ff;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 80px;
+    font-family: 'Bitter', serif;
+
+}
+
+
+.side-bar #total-appointments h3{
+    font-size: 27px;
+    color: #f4f9ff;
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: 5px;
+    white-space: pre-line;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    font-family: 'Bitter', serif;
+    
+
 }
 
 
