@@ -6,7 +6,8 @@ document.getElementById("cost").innerHTML = doctorsGetter()[findDoctor(pdName,pd
 document.getElementById("rate").innerHTML = doctorsGetter()[findDoctor(pdName,pdCategory)].dRate
 document.getElementById("degree").innerHTML = doctorsGetter()[findDoctor(pdName,pdCategory)].dDegree
 
-
 }
+
+
+    
 sideBarDoctroDetails()
-console.log(doctorsGetter()[findDoctor(pdName,pdCategory)].dName)
