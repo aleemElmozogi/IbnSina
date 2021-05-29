@@ -1,132 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- title font -->
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&display=swap" rel="stylesheet">
-    <!-- page font ppp -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=RocknRoll+One&display=swap" rel="stylesheet">
-    <title>Document</title>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- title font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&display=swap" rel="stylesheet">
+  <!-- page font ppp -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=RocknRoll+One&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
 </head>
 
 <body id="top">
-        <nav class="app-bar"> 
-            <ul>
-                <li  id="title"><a href="index.html"><h1>IbnSina</h1></a></li>
-                <!-- <li id="search-field"><input type="Search" placeholder=" Search "></li>
+  <nav class="app-bar">
+    <ul>
+      <li id="title"><a href="index.html">
+          <h1>IbnSina</h1>
+        </a></li>
+      <!-- <li id="search-field"><input type="Search" placeholder=" Search "></li>
                 <li id="user-info"> <a href="#"> <div></div> <p>D.Ibn Sina</p> </a> </li>
                  -->
-    
-            </ul>
-        </nav>
-<div class="main">
+
+    </ul>
+  </nav>
+  <div class="main">
 
 
-        <h3 id="chose-category">Choose a catagory</h2>
+    <h3 id="chose-category">Choose a catagory</h2>
 
 
 
-    <div class="category">   
+      <div class="category">
         <ul class="catagories">
 
 
-            <li id="Neuropathology" href="#" tabindex="1" >
-                <div></div><h3>Neuro pathology</h3>
-            </li>
+          <li id="Neuropathology" href="#" tabindex="1">
+            <div></div>
+            <h3>Neuro pathology</h3>
+          </li>
 
 
-            <li id="EarTherapy" href="#" tabindex="2"  >
-                <div></div>
-                <h3>Ear Therapy</h3>
-            </li>
-
-            
-
-            <li id="EyesightTherapy" href="#" tabindex="3" >
-                <div></div><h3>Eyesight Therapy</h3>
-            </li>
-
-            
-
-            <li id="HeartTherapy" href="#" tabindex="4" >
-                <div></div><h3>Heart Therapy</h3>
-            </li>
+          <li id="EarTherapy" href="#" tabindex="2">
+            <div></div>
+            <h3>Ear Therapy</h3>
+          </li>
 
 
 
-            <li id="GastroEnterology" href="#" tabindex="5" >
-                <div></div><h3>Gastro Enterology</h3>
-            </li>
+          <li id="EyesightTherapy" href="#" tabindex="3">
+            <div></div>
+            <h3>Eyesight Therapy</h3>
+          </li>
+
+
+
+          <li id="HeartTherapy" href="#" tabindex="4">
+            <div></div>
+            <h3>Heart Therapy</h3>
+          </li>
+
+
+
+          <li id="GastroEnterology" href="#" tabindex="5">
+            <div></div>
+            <h3>Gastro Enterology</h3>
+          </li>
 
 
         </ul>
+      </div>
+
+      <h3 id="chose-doctor">Choose a doctor</h2>
+
+        <table id="doctor-details" CELLSPACING=0 style="text-align: center;">
+
+
+
+
+          <tr>
+
+            <th>Doctor</th>
+            <th>Degree</th>
+            <th>Rate</th>
+            <th>Cost</th>
+            <th>Time for today</th>
+
+
+          </tr>
+
+        </table>
+  </div> <!-- end of main -->
+
+
+
+  <div class="side-bar">
+    <div id="total-appointments">
+      <!-- going to put here some whelcome-message or something like that? -->
+      <h1 id="totalAppointments"></h1>
+      <h3>Total appointments</h3>
     </div>
 
-    <h3  id="chose-doctor" >Choose a doctor</h2>
+    <div id="booking">
+      <h2>Booking</h2>
+      <form id="booking-form">
 
-<table id="doctor-details" CELLSPACING=0 style="text-align: center;">
-  
-  
-    
+        <input type="text" id="pname" placeholder="Your name..">
+        <select type="text" id="gender" placeholder="Your gender..">
+          <option>Your gender..</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+        <input type="number" id="age" min="13" max="90" placeholder="Your age..">
 
-  <tr>
+        <label for="country">Doctor name</label>
+        <div id="size-box"></div>
+        <select type="text" id="chooseDoctor" placeholder="Choose a doctor">
 
-    <th>Doctor</th>
-    <th>Degree</th>
-    <th>Rate</th>
-    <th>Cost</th>
-    <th>Time for today</th>
+        </select>
 
-    
-  </tr>
-  
-</table>
-</div> <!-- end of main -->
+        <input id="appDate" type="date" min="">
 
+        <input type="text" id="your-problem" placeholder="Your problem..">
 
-
-<div class="side-bar">
-  <div id="total-appointments"> 
-    <!-- going to put here some whelcome-message or something like that? -->
-    <h1 id="totalAppointments" ></h1><h3>Total appointments</h3>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </div>
   </div>
+  <script type="text/javascript" src="../../js/doctorObject.js"></script>
+  <script type="text/javascript" src="../../js/controlDoctorObject.js"></script>
+  <script type="text/javascript" src="../../js/hTableControl.js"></script>
+  <script type="text/javascript" src="../../js/montlyReports.js"></script>
+  <script type="text/javascript" src="../../js/catagory.js"></script>
+  <script type="text/javascript" src="../../js/bookingFormControl.js"></script>
 
-  <div id="booking">
-    <h2>Booking</h2>
-    <form id="booking-form">
-      
-      <input type="text" id="pname"  placeholder="Your name..">
-      <select type="text" id="gender"  placeholder="Your gender..">
-        <option >Your gender..</option>
-        <option >Male</option>
-        <option >Female</option>
-      </select>
-      <input type="number" id="age" min="13" max="90" placeholder="Your age..">
-  
-      <label for="country">Doctor name</label>
-      <div id="size-box"></div>
-      <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
-        
-      </select>
-  
-      <input id="appDate" type="date" min="">
-  
-      <input type="text" id="your-problem" placeholder="Your problem..">
-  
-      <input type="submit"  id="submit" value="Submit">
-    </form>
-  </div>
-</div>
-<script type="text/javascript"  src="../../js/doctorObject.js"></script>
-<script type="text/javascript" src="../../js/controlDoctorObject.js"></script>
-<script type="text/javascript" src="../../js/hTableControl.js"></script>
-<script type="text/javascript"  src="../../js/montlyReports.js"></script>
-<script type="text/javascript" src="../../js/catagory.js"></script>
-<script type="text/javascript" src="../../js/bookingFormControl.js"></script>      
+  <!-- <script type="text/javascript" src="../../mvc-js/doctorObject.js"></script>
+<script type="text/javascript" src="../../mvc-js/home-screen/main.js"></script>    -->
 </body>
 
 </html>

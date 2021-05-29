@@ -87,6 +87,8 @@ submit.addEventListener('click', function(event) {
         pTable(pdName, pdCategory)
 
     reports(pdName, pdCategory)
+    
+    document.getElementById("totalAppointments").innerHTML = allTotalAppointments()
 
     document.querySelector('#pname').value = ''
     document.querySelector('#gender').value = ''
