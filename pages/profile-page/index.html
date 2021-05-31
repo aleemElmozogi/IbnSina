@@ -18,9 +18,9 @@
 <body>
         <nav class="app-bar"> 
             <ul>
-                <li  id="title"><a href="#"><h1>IbnSina</h1></a></li>
-                <li id="search-field"><input type="Search" placeholder=" Search "></li>
-                <li id="user-info"> <a href="#"> <div></div> <p>D.Ibn Sina</p> </a> </li>
+                <li  id="title"><a href="../home-page/index.html"  ><h1>IbnSina</h1></a></li>
+                <!-- <li id="search-field"><input type="Search" placeholder=" Search "></li>
+                <li id="user-info"> <a href="#"> <div></div> <p>D.Ibn Sina</p> </a> </li> -->
                 
     
             </ul>
@@ -30,7 +30,8 @@
   <div class="whelcome-message-container">
     <div class="message">
       <h1 class="whelcome-message">Whelcome to</h1>
-      <h3 class="doctor-name">Doctor Ibrahim Elmozogi profile</h3>
+      <h3 id="doctor-name" class="doctor-name"></h3>
+      
     </div>
     <div class="doctor-vector"></div></div>
 
@@ -39,29 +40,29 @@
 
 
 
-    <div class="reports" >   
+    <div id="reports" >   
         <ul>
 
 
-            <li href="#" >
-                <h1>65</h1><h3>Totale appointments</h3>
+            <li href="#"  >
+                <h1 id="totalAppointments" ></h1><h3>Total appointments</h3>
             </li>
 
 
             <li href="#" >
-                <h1>25</h1><h3>Upcoming appointments</h3>
+                <h1 id="myAppointments"></h1><h3>My appointments</h3>
             </li>
 
 
 
             <li href="#" >
-              <h1>41</h1><h3>Female
+              <h1 id="femalePations"></h1><h3>Female
                 pations
               </h3>
           </li>
 
           <li href="#" >
-            <h1>24</h1><h3>Male
+            <h1 id="malePations"></h1><h3>Male
                 pations</h3>
         </li>
 
@@ -70,60 +71,21 @@
 
   <h3  id="Upcoming-appointments-text" >Upcoming appointments</h2>
 
-<table class="Upcoming-appointments" CELLSPACING=0>
+<table id="Upcoming-appointments" CELLSPACING=0>
   <tr>
   
     <th>Name</th>
     <th>Age</th>
+    <th>gender</th>
     <th>appointment
       date</th>
-    <th>appointment
-      time</th>
     <th>Pation file</th>
   
   </tr>
  
-  <tr  id="table-data">
-    <td id="name">Khalid diaf</td>
-    <td>35 years old</td>
-    <td>Thursday, April 1</td>
-    <td>3 PM</td>
-    <td id="time-for-today"><div><div id="pation-file"></div><div id="add-file"><input type="file"></div></div></td>
+  
 
-    </div></td>
-  </tr>
-
-  <tr  id="table-data">
-    <td id="name" ><p>Khalid diaf</p></td>
-    <td>35 years old</td>
-    <td>Thursday, April 1</td>
-    <td>3 PM</td>
-    <td id="time-for-today"><div><div id="pation-file"></div><div id="add-file"><input type="file"></div></div></td>
-  </tr>
-
-  <tr  id="table-data">
-    <td id="name" ><p>Khalid diaf</p></td>
-    <td>35 years old</td>
-    <td>Thursday, April 1</td>
-    <td>3 PM</td>
-    <td id="time-for-today"><div><div id="pation-file"></div><div id="add-file"><input type="file"></div></div></td>
-  </tr>
-
-  <tr  id="table-data">
-    <td id="name" ><p>Khalid diaf</p></td>
-    <td>35 years old</td>
-    <td>Thursday, April 1</td>
-    <td>3 PM</td>
-    <td id="time-for-today"><div><div id="pation-file"></div><div id="add-file"><input type="file"></div></div></td>
-  </tr>
-
-  <tr  id="table-data">
-    <td id="name" ><p>Khalid diaf</p></td>
-    <td>35 years old</td>
-    <td>Thursday, April 1</td>
-    <td>3 PM</td>
-    <td id="time-for-today"><div><div id="pation-file"></div><div id="add-file"><input type="file"></div></div></td>
-  </tr>
+ 
  
 </table>
 </div> <!-- end of main -->
@@ -137,13 +99,13 @@
 
     <div id="doctor-details">
         <label for="name">Name  </label>
-        <h3 id="name">Ibrahim elmozogi</h3>
+        <h3 id="name"></h3>
+        <label for="rate">Cost</label>
+        <h3 id="cost"></h3>
         <label for="rate">Rating</label>
-        <h3 id="rate">4.5 / 5	</h3>
-        <label for="rate">Rating</label>
-        <h3 id="rate">4.5 / 5	</h3>
+        <h3 id="rate"></h3>
         <label for="degree">Degree</label>
-        <h3 id="degree">Professor</h3>
+        <h3 id="degree">  </h3>
 
     </div>
   </div>
@@ -152,7 +114,7 @@
   <h2>Booking</h2>
   <form id="booking-form">
     
-    <input type="text" id="name"  placeholder="Your name..">
+    <input type="text" id="pname"  placeholder="Your name..">
     <select type="text" id="gender"  placeholder="Your gender..">
       <option >Your gender..</option>
       <option >Male</option>
@@ -162,21 +124,29 @@
 
     <label for="country">Doctor name</label>
     <div id="size-box"></div>
-    <select >
-      <option >Ibrahim elmozogi</option>
+    <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
       
-
     </select>
 
-    <input type="date" min="2021-04-02" max="2021-04-10">
+    <input id="appDate" type="date" min="">
 
     <input type="text" id="your-problem" placeholder="Your problem..">
 
-    <input type="submit" id="submit" value="Submit">
+    <input type="submit"  id="submit" value="Submit">
   </form>
 </div>
 </div>
         
+<script type="text/javascript"  src="../../js/doctorObject.js"></script>
+<script type="text/javascript" src="../../js/controlDoctorObject.js"></script>
+<script type="text/javascript"  src="../../js/montlyReports.js"></script>
+<script type="text/javascript" src="../../js/pTableControl.js"></script>
+<script type="text/javascript" src="../../js/bookingFormControl.js"></script>
+<script type="text/javascript" src="../../js/sideBarDoctroDetails.js"></script>  
+<script type="text/javascript" src="../../js/whelcomeMessage.js"></script>      
+
+
+
 </body>
 
 </html>

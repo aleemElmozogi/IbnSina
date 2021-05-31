@@ -7,57 +7,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- title font -->
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700;800&display=swap" rel="stylesheet">
-    <!-- page font  -->
+    <!-- page font ppp -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=RocknRoll+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Document</title>   
 </head>
 
-<body>
+<body id="top">
         <nav class="app-bar"> 
             <ul>
-                <li  id="title"><a href="#"><h1>IbnSina</h1></a></li>
-                <li id="search-field"><input type="Search" placeholder=" Search "></li>
+                <li  id="title"><a href="index.html"><h1>IbnSina</h1></a></li>
+                <!-- <li id="search-field"><input type="Search" placeholder=" Search "></li>
                 <li id="user-info"> <a href="#"> <div></div> <p>D.Ibn Sina</p> </a> </li>
-                
+                 -->
     
             </ul>
         </nav>
 <div class="main">
 
 
-        <h3 id="chose-category">Chose category</h2>
+        <h3 id="chose-category">Choose a catagory</h2>
 
 
 
     <div class="category">   
-        <ul>
+        <ul class="catagories">
 
 
-            <li href="#" tabindex="1">
+            <li id="Neuropathology" href="#" tabindex="1" >
                 <div></div><h3>Neuro pathology</h3>
             </li>
 
 
-            <li href="#" tabindex="2">
-                <div></div><h3>Ear Therapy</h3>
+            <li id="EarTherapy" href="#" tabindex="2"  >
+                <div></div>
+                <h3>Ear Therapy</h3>
+            </li>
+
+            
+
+            <li id="EyesightTherapy" href="#" tabindex="3" >
+                <div></div><h3>Eyesight Therapy</h3>
+            </li>
+
+            
+
+            <li id="HeartTherapy" href="#" tabindex="4" >
+                <div></div><h3>Heart Therapy</h3>
             </li>
 
 
 
-            <li href="#" tabindex="3">
-                <div></div><h3>Eyesigt Therapy</h3>
-            </li>
-
-
-
-            <li href="#" tabindex="4">
-                <div></div><h3>Hearth Therapy</h3>
-            </li>
-
-
-
-            <li href="#" tabindex="5">
+            <li id="GastroEnterology" href="#" tabindex="5" >
                 <div></div><h3>Gastro Enterology</h3>
             </li>
 
@@ -65,109 +66,67 @@
         </ul>
     </div>
 
-    <h3  id="chose-doctor" >Chose the doctor</h2>
+    <h3  id="chose-doctor" >Choose a doctor</h2>
 
-<table class="doctor-details" CELLSPACING=0>
-  <tr>
+<table id="doctor-details" CELLSPACING=0 style="text-align: center;">
   
+  
+    
+
+  <tr>
+
     <th>Doctor</th>
     <th>Degree</th>
     <th>Rate</th>
-    <th>Price</th>
+    <th>Cost</th>
     <th>Time for today</th>
-  
-  </tr>
- 
-  <tr  id="table-data">
-    <td id="name" ><div></div><p>Khalid diaf</p></td>
-    <td>Specialist</td>
-    <td> 4.5 / 5</td>
-    <td>30$/session</td>
-    <td id="time-for-today"><div>7PM</div><div>1PM</div></td>
+
+    
   </tr>
   
-
-  
-
-  <tr id="table-data">
-    <td id="name" ><div></div><p>Seraj ben sasi</p></td>
-    <td>Consultant</td>
-    <td> 5 / 5</td>
-    <td>35%/session</td>
-    <td id="time-for-today"><div>10PM</div><div>4PM</div></td>
-  </tr>
-
-  <tr id="table-data">
-    <td id="name" ><div></div><p>Hanipal ahmed</p></td>
-    <td>Professor</td>
-    <td> 4 / 5</td>
-    <td>40$/session</td>
-    <td id="time-for-today"><div>2PM</div><div>8AM</div></td>
-  </tr>
-  <tr id="table-data">
-    <td id="name" ><div></div><p>Yousef ibrahim</p></td>
-    <td>Senior specialist</td>
-    <td> 4.5 / 5</td>
-    <td>30$/session</td>
-    <td id="time-for-today"><div>3PM</div><div>9AM</div></td>
-  </tr>
-
-  <tr id="table-data">
-    <td id="name" ><div></div><p>Marwan khalid</p></td>
-    <td>Professor</td>
-    <td> 5 / 5</td>
-    <td>50$/session</td>
-    <td id="time-for-today"><div>5PM</div><div>11AM</div></td>
-  </tr>
-
-  <tr id="table-data">
-    <td id="name" ><div></div><p>Ahmed musa</p></td>
-    <td>Consultant</td>
-    <td> 4.5 / 5</td>
-    <td>30$/session</td>
-    <td id="time-for-today"><div>2PM</div><div>8AM</div></td>
-  </tr>
- 
 </table>
 </div> <!-- end of main -->
 
 
 
 <div class="side-bar">
-  <div id="doctor-profile"> 
+  <div id="total-appointments"> 
     <!-- going to put here some whelcome-message or something like that? -->
-   
+    <h1 id="totalAppointments" ></h1><h3>Total appointments</h3>
   </div>
 
-<div id="booking">
-  <h2>Booking</h2>
-  <form id="booking-form">
-    
-    <input type="text" id="name"  placeholder="Your name..">
-    <select type="text" id="gender"  placeholder="Your gender..">
-      <option >Your gender..</option>
-      <option >Male</option>
-      <option >Female</option>
-    </select>
-    <input type="number" id="age" min="13" max="90" placeholder="Your age..">
-
-    <label for="country">Doctor name</label>
-    <div id="size-box"></div>
-    <select >
-      <option >Ibrahim elmozogi</option>
+  <div id="booking">
+    <h2>Booking</h2>
+    <form id="booking-form">
       
-
-    </select>
-
-    <input type="date" min="2021-04-02" max="2021-04-10">
-
-    <input type="text" id="your-problem" placeholder="Your problem..">
-
-    <input type="submit" id="submit" value="Submit">
-  </form>
-</div>
-</div>
+      <input type="text" id="pname"  placeholder="Your name..">
+      <select type="text" id="gender"  placeholder="Your gender..">
+        <option >Your gender..</option>
+        <option >Male</option>
+        <option >Female</option>
+      </select>
+      <input type="number" id="age" min="13" max="90" placeholder="Your age..">
+  
+      <label for="country">Doctor name</label>
+      <div id="size-box"></div>
+      <select type="text" id="chooseDoctor"  placeholder="Choose a doctor">
         
+      </select>
+  
+      <input id="appDate" type="date" min="">
+  
+      <input type="text" id="your-problem" placeholder="Your problem..">
+  
+      <input type="submit"  id="submit" value="Submit">
+    </form>
+  </div>
+</div>
+<script type="text/javascript"  src="../../js/doctorObject.js"></script>
+<script type="text/javascript" src="../../js/controlDoctorObject.js"></script>
+<script type="text/javascript" src="../../js/hTableControl.js"></script>
+<script type="text/javascript"  src="../../js/montlyReports.js"></script>
+<script type="text/javascript" src="../../js/catagory.js"></script>
+<script type="text/javascript" src="../../js/bookingFormControl.js"></script>      
 </body>
 
 </html>
