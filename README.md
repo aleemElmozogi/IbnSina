@@ -1,6 +1,6 @@
 # IbnSina
-hospital reservation system
-project members are :
-Abdulalim fawzi elmozogi 171115
-ahmed
-abdulhady 11
+# hospital reservation system
+# project members are :
++ عبدالعليم فوزي المزوغي 171115
++ احمد إبراهيم بيت المال 172157
++ عبدالهادي إسماعيل الدبيب 172280
